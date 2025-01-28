@@ -18,10 +18,13 @@
             background-color: #312F2F;
             padding: 20px;
             text-align: center;
+	    font-family: "Heavy Copper Italic";
+	    <img src="pics/aryn3.jpg"
         }
         header h1 {
             margin: 0;
             color: ad382c;
+	    text-align: center;
         }
         nav ul {
             list-style-type: none;
@@ -40,6 +43,17 @@
         section {
             padding: 20px;
         }
+	scroll {
+		from {
+			transform: translateX(0);
+		}
+		to {
+			transform: translateX(calc(-100% - 1rem));
+		}
+	}
+	.scroll {
+		animation: scroll 10s linear infinite;
+	}
         .band-member  {
             margin-bottom: 20px;
 	    display:flex;
@@ -63,12 +77,27 @@
             border: none;
             cursor: pointer;
         }
+	.marquee {
+		--gap: 1rem;
+		display: flex;
+		overflow: hidden;
+		user-select: none;
+		gap: var(--gap);
+	}
+	.marquee__content {
+		flex-shrink: 0;
+		display: flex;
+		justify-content: space-around;
+		min-width: 100%
+		gap: var(--gap);
+	}
         footer {
             background-color: #333333;
             text-align: center;
             padding: 10px;
             font-size: 0.8em;
             color: #aaaaaa;
+
 	
         }
 	<!-- this is where we centered the text -->
@@ -87,12 +116,13 @@
                 <li><a href="#home">Home</a></li>
                 <li><a href="#band">The Band</a></li>
 		 <li><a href="#music">Music</a></li>
-		<li><a href="merch.html">Shop</a></li>
+		<li><a href="../merch.htm">Shop</a></li>
                 <li><a href="#shows">Shows</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
+<img src="pics/mt stage.png"style="width:100%;height:650px;">
 <body>
 
 
@@ -113,22 +143,13 @@
 	<img src="pics/band.jpg"style="width:700; height:400;">
 	<p><font size="5">
 	<font color=#ad382c>
-This story begins with two besties Parker and Nacho. They have been friends since they were 5, and they both have lived in Portales New Mexico their whole lives.
-They were also in marching band together all of high school, which is where they found their passion for music.
- Parker played euphonium and nacho played trumpet, but they also liked to play guitars and sing just for fun.
- Once college came around, they both decided to attend Eastern New Mexico University in their hometown Portales to pursue a major in music.
-              At Eastern they made many friends including Aryn! Aryn is a percussionist and also a music major.
- They all love hanging out together outside of school, and in choir.
- In middle school and high school Parker and Nacho always dreamed about starting a band but they had horrible stage fright and would only perform at school talent
- shows with their friends.
-During Christmas time in 2023 the marching band at Eastern was having a fundrasier to raise money for Toys for Tots in Portales.
- Aryn saw a video of Parker and Nacho's talent show from high school, and told them they should start a band to raise money!
- It would be perfect Aryn on drums, Nacho on bass, and Parker on Guitar! 
-At first Parker and Nacho were scared to sing in front of everyone but Aryn helped them overcome their stage fright and put on a great show!
- That's how the band made their first album "Holly Jolly Jukebox Jams” and got their name Stage Fright!  After they released their Christmas album, 
-everyone said they should start performing together more often.  After that the band took off! They started performing their original songs “Pink Slime”,
- and “I Got a Moped” at parties and local restaurants. Now these multi talented musicians are putting their college classes on hold to perform their new album on 
-their very first tour!!!!</font><p/></div>
+	The band resides in their hometown Portales, New Mexico. There, they all attend Eastern New Mexico 
+	University where they are persuing majors in music. Stage Fright made their first apperance at Parker 
+	and Nacho's Junior High talent show. Later, in college, they met Stage Frights newest member, Aryn and 
+	immediately hit it off. At first the band was scared to perfom, and you could say they had a horrible case 	
+	of stage fright, giving them their name. Now these multi talented musicians are putting their college 
+	classes on hold to perform their new album on 
+	their very first tour!!!!</font><p/></div>
 </div>     
  
 
@@ -142,38 +163,41 @@ their very first tour!!!!</font><p/></div>
         <div class="band-member">
 	<img src="pics/parker3.jpg"style="width:500; height:500;">
 	<font color=#ad382c>
-            <p> Parker is 22 years old and a senior at Eastern NM university. He has been in band at Portales since 6th grade along with his best friend Nacho. 
-He has played Euphonium for almost 10 years. He has always had a love for rock music, and playing his favorite songs on his guitars.
- Parker went to many rock concerts during high school, and even though he was in the nosebleeds he had never experienced anything better. 
-He was inspired by many major rock bands, and always dreamed of it being them up on that stage. Now Parker is bringing riffs and solos that shake the ground!</p>
+            <p> Parker is 22 years old, and a senior at Eastern New Mexico University. He has been in band at Portales since 
+		6th grade along with his best friend Nacho. He was inspired by many major rock bands, and always 
+		dreamed of it being him up on that stage. Now Parker is bringing riffs and solos that shake the 		
+		ground!</p>
         </div>
 
-	<h1 style="color: f6e9c3;">Bassist: Nacho Perez</h1>
+<h1 style="color: f6e9c3;">Bassist: Nacho Perez</h1>
 
         <div class="band-member">
         <img src="pics/nacho2.jpg"style="width:500; height:500;" >
-	<p>
-	Nacho is 22 years old and is also a senior at ENMU. 	He is very dedicated to music and dreams of being a 	professional musician or a band director at a high school in the future. He is the band's lead singer most of the 	time, and writes a lot of the 	band's original songs.
- 	He plays grooves that get the crowd moving every time.
-	</p>
-        </div>
+	     <p>Nacho is 22 years old, and is also a senior at ENMU. He is very dedicated to music, and dreams of
+ 		being a professional musician.  He is the band's lead singer most of the time, and writes a lot of
+ 		the band's original songs. He plays grooves that get the crowd moving every time.</p>
+       </div>
 
 
-	<h1 style="color: f6e9c3;">Drummer: Aryn Brown</h1>
-<div class="band-member">
+<h1 style="color: f6e9c3;">Drummer: Aryn Brown</h1>
+	
+	<div class="band-member">
 	<img src="pics/aryn3.jpg"style="width:500; height:500;">
-        	<p "padding:0px 100px 0px 0px;"> Aryn is from Roswell, New Mexico. She is 21 and has always had a passion for music. Like Parker and Nacho, she was in marching band all through high school
- and played tenors and snare in the drumline. She attends college in Portales, NM at Eastern New Mexico University and is a junior as of right now but she plans on doing
- 5 years. She would love to teach in Arizona at a high school marching band as a drumline director, and tour over the summer with Stage Fright. Now she's pounding the
- drums like a storm the heart of the band.
-		</p>
+        <p "padding:0px 100px 0px 0px;"> 
+	     <P>Aryn is from Roswell, New Mexico. She is 21 and has always had a passion for music. Aryn has played
+ 		the drums since high school and found it was her calling. She attends college in Portales, NM at
+ 		Eastern New Mexico University and is persuing a degree in music. Now she's pounding the drums like
+ 		a storm, the heart of the band.</p>
 </div>
 </section>
 <section id="music">
 	<h1 style="color: f6e9c3;">Albums</h1>
 		<marquee>
-   		<img src="pics/albums.png" style="width:2000px;height:500px;" alt="Scrolling Image">
+   		<img src="pics/albums.png" style="width:2000px;height:500px;" alt="Scrolling Image" overflow="hidden">
 		</marquee>
+	<p>
+	<a href="https://open.spotify.com"><img src="pics/purchase.png"><img src="pics/download.png"><a/> 
+		</p> 
 </section>
 
     <section id="shows">
@@ -181,7 +205,7 @@ He was inspired by many major rock bands, and always dreamed of it being them up
         <div class="show">
             <h1 style="color: f6e9c3;">Miami, Florida</h1>
             <p>Date: June 7, 2025</p>
-            <p>Venue: Maimi Beach Bandshell</p>
+            <p>Venue: Miami Beach Bandshell</p>
         </div>
         <div class="show">
             <h1 style="color: f6e9c3;">Atlanta, Georgia</h1>
@@ -189,7 +213,7 @@ He was inspired by many major rock bands, and always dreamed of it being them up
             <p>Venue: The Coca-Cola Roxy</p>
         </div>
         <div class="show">
-            <h1 style="color: f6e9c3;">Washington, DC</h1>
+            <h1 style="color: f6e9c3;""font-family:hard rock;">Washington, DC</h1>
             <p>Date: June 21, 2025</p>
             <p>Venue: The Anthem</p>
         </div>
